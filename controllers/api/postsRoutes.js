@@ -50,6 +50,8 @@ router.delete('/:id', withAuth, async (req, res) => {
       },
     });
 
+    console.log(postsData)
+
     if (!postsData) {
       res.status(404).json({ message: 'No posts found with this id!' });
       return;
@@ -57,6 +59,7 @@ router.delete('/:id', withAuth, async (req, res) => {
 
     res.status(200).json(postsData);
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
