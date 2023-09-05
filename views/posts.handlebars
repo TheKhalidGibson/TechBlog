@@ -1,4 +1,6 @@
-<div class="text-center">
+<div id="posts">
+
+{{#each posts as |post|}}
   <h2>{{name}}</h2>
   <p>{{{get_emoji}}}</p>
   <p>{{description}}</p>
@@ -11,4 +13,8 @@
   <p>
     <button class="btn btn-primary">Fund this Project!</button>
   </p>
+{{/each}}
+
 </div>
+
+<script src="/js/posts.js"></script>

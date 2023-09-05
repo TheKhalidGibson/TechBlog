@@ -53,7 +53,7 @@ router.get('/posts/:id', async (req, res) => {
 // This is where the routes for Posts end
 
 // This is where the routes for Comments begin
-router.get('/', async (req, res) => {
+router.get('/comments', async (req, res) => {
   try {
     // Get all comments and JOIN with user data
     const commentsData = await Comments.findAll({
@@ -113,12 +113,13 @@ router.get('/profile', withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-
+    console.log(user)
     res.render('profile', {
       ...user,
       logged_in: true
     });
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
