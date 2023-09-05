@@ -8,7 +8,7 @@
   <div class="col-md-6">
     <h3>Create a Blog Post:</h3>
 
-    <form class="form new-posts-form">
+    <form class="form" id="new-posts-form">
       <div class="form-group">
         <label for="posts-title">blog title:</label>
         <input class="form-input" type="text" id="posts-title" title="posts-title" />
@@ -25,7 +25,7 @@
   </div>
 
   {{#if posts.length}}
-  <div class="col-md-6 posts-list">
+  <div class="col-md-6" id="posts-list">
     <h3>Current Projects:</h3>
 
     {{#each posts as |post|}}
