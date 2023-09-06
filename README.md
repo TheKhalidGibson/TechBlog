@@ -56,7 +56,7 @@ WHEN I am idle for a set period of time my session is logged out and to continue
 
 The following animation demonstrates the example application's functionality that I have used for guidance:
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
+![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./assets/14-mvc-homework-demo-01.gif) 
 
 ## Getting Started
 
@@ -73,7 +73,7 @@ This section is here to highlight the required elements needed for review:
 
 * My application which has been deployed though the usage of Heroku:
 
-Refer to this [Heroku Deployed Application]() to view the functionality of this creation
+Refer to this [Heroku Deployed Application](https://tech-blog-kg-8288cfb3c822.herokuapp.com/) to view the functionality of this creation
     
 
 * The URL to my TechBlog GitHub repository, with a unique name and this README to describe the project:
@@ -82,3 +82,14 @@ Refer to this link [GitHub Repository](https://github.com/TheKhalidGibson/TechBl
 
 
 ## Screenshots
+
+The following images show the results of this application's development phase:
+
+![Image showing the homepage](./assets/blogpic2.png)
+
+![Image showing the login/sign up page](./assets/blogpic3.png)
+
+![Image showing the dashboard/profile page](./assets/blogpic1.png)
+
+![Image showing the individual posts page](./assets/blogpic4.png)
+
