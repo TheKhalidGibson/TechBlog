@@ -1,30 +1,39 @@
-let posts = document.querySelector("#posts")
+let posts = document.querySelector(".add-comment-form")
 
-posts.addEventListener("click", async function(event){
+posts.addEventListener("submit", async function (event) {
 
-   if (event.target.matches("button")){
+   event.preventDefault();
 
-   let clickedId = event.target.getAttribute("data-id")
-   
-    console.log(clickedId);
+   let post_id = event.target.getAttribute("data-id")
 
-    const response = await fetch("/api/posts" + clickedId,{
-    
-      method: "DELETE",
+   console.log(post_id);
 
-    });
+   let body = document.querySelector("#comment-body").value
+console.log(body)
+   if (post_id && body) {
 
-    await response.json();
 
-    if (response.status === 200) {
+      const response = await fetch(`/api/comments`, {
 
-      window.location.reload();
+         method: "POST",
+         body: JSON.stringify({ post_id, body }),
+         headers: {
+           'Content-Type': 'application/json',
+         },
 
-    } else {
+      });
 
-      console.log("an error occurred!")
+      await response.json();
+      console.log(response.status)
+      if (response.status === 200) {
 
-    }
+         window.location.reload();
+
+      } else {
+
+         console.log("an error occurred!")
+
+      }
 
 
    }
