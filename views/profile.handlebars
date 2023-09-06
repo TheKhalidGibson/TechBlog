@@ -1,21 +1,21 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2 id="profile-heads">Welcome, {{name}}!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a Blog Post:</h3>
+    <h3 id="profile-heads">Create a Blog Post:</h3>
 
     <form class="form" id="new-posts-form">
       <div class="form-group">
-        <label for="posts-title">blog title:</label>
+        <label for="posts-title" id="profile-label">blog title:</label>
         <input class="form-input" type="text" id="posts-title" title="posts-title" />
       </div>
       
       <div class="form-group">
-        <label for="posts-desc">description:</label>
+        <label for="posts-desc" id="profile-label">description:</label>
         <textarea class="form-input" id="posts-desc" title="posts-desc"></textarea>
       </div>
       <div class="form-group">
@@ -26,7 +26,7 @@
 
   {{#if posts.length}}
   <div class="col-md-6" id="posts-list">
-    <h3>Current Projects:</h3>
+    <h3 id="profile-heads">Current Projects:</h3>
 
     {{#each posts as |post|}}
     <div class="row mb-2">

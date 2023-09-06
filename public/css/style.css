@@ -7,9 +7,41 @@ header, .project:not(:last-child) {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: #1b89bc;
+  color: #05204A;
   text-decoration: none;
   font-size: 100%;
+}
+
+#profile-label{
+
+  color: #1b4b99;
+}
+
+#posts-label{
+
+  color: #1b4b99;
+
+}
+
+#post-title{
+
+  color: #1b4b99;
+}
+
+#login-signup{
+
+  color: #1b4b99;
+}
+
+#profile-heads{
+
+ color: #1b4b99;
+}
+
+body {
+
+  background-color: #E1E2EF;
+
 }
 
 .no-button:hover {
