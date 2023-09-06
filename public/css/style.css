@@ -12,6 +12,29 @@ header, .project:not(:last-child) {
   font-size: 100%;
 }
 
+#nav-bar{
+
+  background-color: #B497D6;
+}
+
+#homepage-title{
+
+  color: #1b4b99;
+ 
+}
+
+#homepage-login{
+
+  color: #1b4b99;
+ 
+}
+
+#homepage-profile{
+
+  color: #1b4b99;
+ 
+}
+
 #profile-label{
 
   color: #1b4b99;
