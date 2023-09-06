@@ -136,10 +136,10 @@ router.get('/editpost', withAuth, async (req, res) => {
       include: [{ model: Posts, Comments }],
     });
 
-    const user = userData.get({ plain: true });
+    const posts = userData.get({ plain: true });
     console.log(user)
-    res.render('profile', {
-      ...user,
+    res.render('posts', {
+      ...posts,
       logged_in: true
     });
   } catch (err) {

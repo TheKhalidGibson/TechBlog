@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-6" id="editpost">
+
+
+    <h2 id="post-title">{{title}}</h2>
+    <p>{{description}}</p>
+    <p>Created by {{user.name}} on {{format_date date_created}}</p>
+    <p>
+    </p>
+    {{#if logged_in}}
+    <form class="add-comment-form form" data-id="{{id}}">
+      <div class="form-group">
+        <label for="body" id="posts-label">Any Thoughts? Add your comments here:</label>
+        <input class="form-input" type="text" name="body" id="comment-body">
+      </div>
+      <div class="form-group">
+
+              <button type="submit" class="btn btn-primary">Submit!</button>
+
+      </div>
+    </form>
+    {{/if}}
+  </div>
+  <div class="col-md-6">
+
+    {{#each comments as |comment|}}
+      <p>{{comment.body}} - {{comment.user.name}}</p>
+      <br>
+    {{/each}}
+
+  </div>
+</div>
+<script src="/js/posts.js"></script>
