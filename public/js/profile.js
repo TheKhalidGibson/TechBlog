@@ -23,7 +23,7 @@ const newFormHandler = async (event) => {
 };
 
 const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
+  if (event.target.matches('.btn-danger')) {
     const id = event.target.getAttribute('data-id');
 
     const response = await fetch(`/api/posts/${id}`, {
@@ -38,6 +38,19 @@ const delButtonHandler = async (event) => {
   }
 };
 
+const editButtonHandler =  (event) => {
+  console.log(event)
+  if (event.target.matches('.btn-info')) {
+    const id = event.target.getAttribute('data-id');
+
+   
+
+   
+      document.location.replace(`/posts/${id}`);
+   
+  } 
+};
+
 document
   .querySelector('#new-posts-form')
   .addEventListener('submit', newFormHandler);
@@ -45,3 +58,7 @@ document
 document
   .querySelector('#posts-list')
   .addEventListener('click', delButtonHandler);
+
+  document
+  .querySelector('#posts-list')
+  .addEventListener('click', editButtonHandler);
