@@ -136,7 +136,7 @@ router.get('/editpost', withAuth, async (req, res) => {
       include: [{ model: Posts, Comments }],
     });
 
-    const posts = userData.get({ plain: true });
+    const user = userData.get({ plain: true });
     console.log(user)
     res.render('posts', {
       ...posts,
