@@ -30,9 +30,11 @@ router.post('/', withAuth, async (req, res) => {
 
 router.put('/:id', withAuth, async (req, res) => {
   try {
-    const newPosts = await Posts.create({
-      ...req.body,
+    const newPosts = await Posts.update(req.body, {
+     where:{
+      id: req.params.id,
       user_id: req.session.user_id,
+    },
     });
 
     res.status(200).json(newPosts);
