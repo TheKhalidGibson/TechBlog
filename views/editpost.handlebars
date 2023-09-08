@@ -1,9 +1,12 @@
 <div class="row">
-  <div class="col-md-6" id="editpost">
+  <div class="col-md-6" id="editPost">
 
 
     <h2 id="post-title">{{title}}</h2>
+    <textarea type="text" name="title" id="" value={{title}}>{{title}}</textarea>
     <p>{{description}}</p>
+    <textarea type="text" name="title" id="" >{{description}}</textarea>
+
     <p>Created by {{user.name}} on {{format_date date_created}}</p>
     <p>
     </p>
@@ -30,4 +33,4 @@
 
   </div>
 </div>
-<script src="/js/posts.js"></script>
+<script src="/js/editPost.js"></script>
