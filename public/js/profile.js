@@ -46,7 +46,7 @@ const editButtonHandler =  (event) => {
    
 
    
-      document.location.replace(`/posts/${id}`);
+      document.location.replace(`/editpost/${id}`);
       console.log(document.location.replace)
   } 
 };
