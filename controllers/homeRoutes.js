@@ -128,18 +128,16 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
-router.get('/editpost', withAuth, async (req, res) => {
+router.get('/editpost/:post_id', withAuth, async (req, res) => {
   try {
     // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Posts, Comments }],
+    const postData = await Posts.findByPk(req.params.post_id, {
     });
 
-    const user = userData.get({ plain: true });
-    console.log(user)
+    const post = postData.get({ plain: true });
+    console.log(post)
     res.render('editpost', {
-      ...editPost,
+      ...post,
       logged_in: true
     });
   } catch (err) {
