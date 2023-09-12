@@ -1,22 +1,26 @@
 let editPost = document.querySelector(".add-comment-form")
 
+let descriptionEl = document.querySelector("#description");
+let titleEl = document.querySelector("#title");
+
 editPost.addEventListener("submit", async function (event) {
 
    event.preventDefault();
 
-   let post_id = event.target.getAttribute("data-id")
+   let id = event.target.getAttribute("data-id")
 
-   console.log(post_id);
+   console.log(id);
 
-   let body = document.querySelector("#comment-body").value
+   let description = descriptionEl.value
+   let title = titleEl.value
 console.log(body)
-   if (post_id && body) {
+   if (id && title && description) {
 
 
-      const response = await fetch(`/api/editPost`, {
+      const response = await fetch(`/api/posts/`+ id, {
 
-         method: "POST",
-         body: JSON.stringify({ post_id, body }),
+         method: "PUT",
+         body: JSON.stringify({ id, description, title }),
          headers: {
            'Content-Type': 'application/json',
          },
