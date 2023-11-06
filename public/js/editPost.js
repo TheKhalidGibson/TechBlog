@@ -13,14 +13,14 @@ editPost.addEventListener("submit", async function (event) {
 
    let description = descriptionEl.value
    let title = titleEl.value
-console.log(body)
+
    if (id && title && description) {
 
 
       const response = await fetch(`/api/posts/`+ id, {
 
          method: "PUT",
-         body: JSON.stringify({ id, description, title }),
+         body: JSON.stringify({ description, title }),
          headers: {
            'Content-Type': 'application/json',
          },
