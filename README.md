@@ -73,7 +73,7 @@ This section is here to highlight the required elements needed for review:
 
 * My application which has been deployed though the usage of Heroku:
 
-Refer to this [Heroku Deployed Application](https://tech-blog-kg-8288cfb3c822.herokuapp.com/) to view the functionality of this creation
+Refer to this [Heroku Deployed Application](https://tech-blog-kg-3d1231aaaa4b.herokuapp.com/) to view the functionality of this creation
     
 
 * The URL to my TechBlog GitHub repository, with a unique name and this README to describe the project:
