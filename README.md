@@ -89,7 +89,7 @@ The following images show the results of this application's development phase:
 
 ![Image showing the login/sign up page](./assets/blogpic3.png)
 
-![Image showing the dashboard/profile page](./assets/blogpic1.png)
+![Image showing the dashboard/profile page](./assets/techBlog2.png)
 
 ![Image showing the individual posts page](./assets/blogpic4.png)
 
