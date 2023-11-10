@@ -12,61 +12,107 @@ header, .project:not(:last-child) {
   font-size: 100%;
 }
 
+
 #nav-bar{
 
-  background-color: #B497D6;
+  background-color: #2B3A67;
+  
+}
+
+.no-button{
+  color: #E1E2EF;
+
+}
+
+.previous-headers{
+  color: #2B3A67;
+}
+
+.previous-headers:hover{
+  color: #2B3A67;
+  text-decoration: none;
+  background-color: #009DDC;
+  opacity: 98%;
+  border-radius: 5%;
+  padding: 5px; 
 }
 
 #homepage-title{
 
-  color: #1b4b99;
- 
+  /* color: #1b4b99; */
+  color: #E1E2EF;
 }
 
 #homepage-login{
 
-  color: #1b4b99;
+  color: #E1E2EF;
+ 
+}
+
+#logout{
+
+  color: #E1E2EF;
  
 }
 
 #homepage-profile{
 
-  color: #1b4b99;
+  color: #E1E2EF;
  
 }
 
 #profile-label{
 
-  color: #1b4b99;
+  color: #2B3A67;
 }
 
 #posts-label{
 
-  color: #1b4b99;
+  color: #2B3A67;
 
 }
 
 #post-title{
 
-  color: #1b4b99;
+  color: #2B3A67;
 }
 
 #login-signup{
 
-  color: #1b4b99;
+  color: #E1E2EF;
 }
 
 #profile-heads{
 
- color: #1b4b99;
+ color: #2B3A67;
 }
 
 .edit-headers{
+  color: #2B3A67;
+  
+}
 
-  color: #0e3e8b;
+.edit-headers:hover{
+  color: #2B3A67;
+  text-decoration: none;
+  background-color: #009DDC;
+  opacity: 98%;
+  border-radius: 5%;
+  padding: 5px; 
 }
 
 .form-input{
+
+  width: 400px;
+  height: 50px;
+  padding-top: 8px;
+  padding-left: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+
+}
+
+.form-input-two{
 
   width: 400px;
   height: 100px;
@@ -77,6 +123,8 @@ header, .project:not(:last-child) {
 
 }
 
+
+
 body {
 
   background-color: #E1E2EF;
@@ -84,9 +132,15 @@ body {
 }
 
 .no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+  color: #2B3A67;
+  text-decoration: none;
+  background-color: #5F634F;
+  opacity: 98%;
+  border-radius: 5%;
+  padding: 5px; 
 }
+
+
 
 .dollar-amount {
   color: #056605;

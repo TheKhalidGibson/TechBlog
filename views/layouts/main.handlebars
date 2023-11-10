@@ -14,15 +14,15 @@
     <header class="display-flex justify-space-between align-center p-2" id="nav-bar">
       <h1>
         {{!-- <span role="img" aria-label="money"></span> --}}
-        <a href="/" id="homepage-title">Tech Blog</a>
+        <a href="/" id="homepage-title" class="no-button">Tech Blog</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile" id="homepage-profile">profile</a> |
+        <a href="/profile" id="homepage-profile" class="no-button">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login" id="homepage-login">login</a>
+        <a href="/login" id="homepage-login" class="no-button">login</a>
         {{/if}}
       </nav>
     </header>
